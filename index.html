@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation du Second degré</title>
+</head>
+<body>
+    <script>
+        let a,b,c,delta;
+        a= prompt("Entrer la valeur de a");
+        b= prompt("Entrer la valeur de b");
+        c= prompt("Entrer la valeur de c");
+        delta=b*b-4*a*c;
+        if(delta<0){
+            alert("l'équation n'a pas de solution réelle");
+        }else if(delta==0){
+           x=-b/(2*a);
+           alert("l'équation admet une solution réelle double :"+ x);
+        }else if(delta>0){
+            x1=(-b-Math.sqrt(delta))/2*a;
+            x2=(-b+Math.sqrt(delta))/2*a;
+            alert("l'équation admet deux solutions réelles :" + x1 + " " + x2);
+        }else{
+            alert("l'equation n'existe pas");
+        }
+    </script>
+</body>
+</html>
